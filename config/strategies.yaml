@@ -1,0 +1,9 @@
+strategies:
+  momentum_daily:
+    tickers: ["AAPL", "MSFT", "GOOGL"]
+    timeframe: "1d"
+    indicators: ["sma_20", "sma_50", "rsi_14", "macd"]
+    close_eod: true
+    confidence_threshold: 0.7
+    max_position_pct: 0.1
+    max_daily_loss_pct: 0.02

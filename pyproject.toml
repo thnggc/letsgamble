@@ -1,0 +1,24 @@
+[project]
+name = "letsgamble"
+version = "0.1.0"
+description = "Claude-powered trading bot for IBKR"
+requires-python = ">=3.9"
+dependencies = [
+    "anthropic>=0.52.0",
+    "httpx>=0.28.0",
+    "pandas>=2.2.0",
+    "ta>=0.11.0",
+    "pydantic>=2.10.0",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24.0",
+]
+
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
